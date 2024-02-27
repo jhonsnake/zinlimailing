@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Compra aprobada!</title>
+  </head>
+  <body>
+    <style>
+
+
+      html {
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: 'Helvetica', sans-serif;
+
+      }
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ol,
+      ul {
+        margin: 0;
+        padding: 0;
+
+      }
+
+      ol,
+      ul {
+        list-style: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .container {
+
+        margin: 0 auto;
+        background: white;
+        width: 600px;
+
+
+      }
+      .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 46px;
+      }
+
+      .check img{
+        width: 88px;
+        height: 88px;
+      }
+      .saludo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .saludo span{
+        font-weight: bold;
+      }
+
+      .monto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 22px;
+        font-size: 38px;
+        text-align: center;
+        font-weight: bold;
+        color: #44289A;
+      }
+
+      .detalles{
+        width: 520px;
+        margin: 0 auto;
+        margin-top: 40px;
+        background: #FAFFFE;
+mix-blend-mode: normal;
+box-shadow: 0px 1px 2px rgba(215, 215, 215, 0.6);
+border-radius: 0px 0px 8px 8px;
+      }
+
+      .detalles h4{
+        text-align: center;
+        font-weight: bold;
+        color: #5A37B4;
+        background-color:#BCDED2 ;
+        padding-top: 15px;
+        padding-bottom: 9px;
+        border-radius: 8px 8px 0px 0px;
+      }
+
+      .detalles-contenido{
+
+        margin: 16px 24px;
+        padding-bottom: 32px;
+      }
+
+      .item{
+        display: flex;
+        padding-top: 7px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .detalle-item{
+        font-weight: bold;
+      }
+
+      .disclaimer{
+        width: 488px;
+        height: 53px;
+        margin: 0 auto;
+        margin-top: 32px;
+        font-weight: 400;
+font-size: 14px;
+line-height: 154.2%;
+
+      }
+
+      .footer{
+        background-color: #5A37B4;
+        margin-top: 27px;
+      }
+
+      .eslogan h2{
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+
+      hr{
+        display: block;
+        width: 553px;
+        margin: 0 auto;
+      }
+
+      .logo{
+        margin-top: 37px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .logo img{
+        width: 168px;
+        height: 44px;
+      }
+
+      .social{
+        display: flex;
+        margin-top: 16px;
+        gap: 16px;
+        justify-content: center;
+
+      }
+
+      .social img{
+        width: 25px;
+      height: 25px;
+      }
+
+      .footer-text{
+        display: flex;
+        justify-content: center;
+        margin-top: 26px;
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-text a{
+        text-decoration: none;
+        color: white;
+        padding-bottom: 24px;
+      }
+
+      .disclaimer2{
+
+        text-align: center;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-top: 10px;
+        font-weight: 400;
+        padding-bottom: 24px;
+      }
+
+      .baja {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+      }
+
+      .separador{
+        width: 470px;
+      }
+    </style>
+    <div id="app">
+      <div class="container">
+        <div class="header">
+          <div class="top">
+            <img src="https://share1.cloudhq-mkt3.net/10901adf46783d.png" alt="header" width="1200" height="164">
+          </div>
+          <div class="check">
+            <img src="https://share1.cloudhq-mkt3.net/b15bd45ffc1a6e.png" alt="" width="176" height="176">
+          </div>
+          <div class="saludo">
+            <p>
+              ¡Hola, Daniela Neuenschwander! <br />
+              <span>Recibiste dinero en tu cuenta  Zinli</span>
+            </p>
+          </div>
+          <div class="monto"><p>$23.05</p></div>
+          <div class="disclaimer">
+            <p>Te recordamos que alcanzaste el límite de tu billetera, pero ¡no te preocupes! Aceptamos la transacción.</p>
+          </div>
+          <div class="detalles">
+            <h4>Detalle de la transacción</h4>
+            <ul class="detalles-contenido">
+              <li>
+                <ul class="item">
+                  <li>Fecha</li>
+                  <li class="detalle-item">24 Feb 2024 - 12:30 pm</li>
+            </ul></li>
+
+
+            <ul class="item">
+                <li>Referencia</li>
+                <li class="detalle-item">#1234434</li>
+          </ul></li>
+
+          <br>
+
+          <ul class="item">
+            <li>Monto</li>
+            <li class="detalle-item">$600.00</li>
+      </ul></li>
+
+            <ul class="item">
+              <li>Costo de la transacción</li>
+              <li  class="detalle-item">$0.40</li>
+        </ul>
+        <ul class="item">
+            <li>Costo por exceder el límite</li>
+            <li  class="detalle-item">$6.00</li>
+      </ul>
+<br>
+      <hr class="separador">
+      <ul class="item">
+        <li>Recibes</li>
+        <li class="detalle-item">$593.60</li>
+  </ul></li>
+
+              <li>
+          </div>
+          <div class="disclaimer">
+            <p>Si no has realizado esta compra, inactiva tu tarjeta a través de Zinli con un solo TAP.</p>
+          </div>
+          <div class="footer">
+           <div class="eslogan"> <h2>Tu dinero <br> Zin límites </h2></div>
+            <hr>
+           <div class="logo">
+            <img src="https://share1.cloudhq-mkt3.net/d2cad41b1bf4a6.png" alt="logo" width="336" height="88">
+           </div>
+           <ul  class="social">
+            <li><a href="#">
+              <img src="https://share1.cloudhq-mkt3.net/c51c5a788a0c73.png" alt="" width="50" height="50">
+            </a></li>
+            <li> <a href="#">
+              <img src="https://share1.cloudhq-mkt3.net/7f8d2d9c0db6d2.png" alt="" width="54" height="50">
+            </a></li>
+            <li><a href="#">
+              <img src="https://share1.cloudhq-mkt3.net/ab1123f089f255.png" alt="" width="50" height="50">
+            </a></li>
+            <li><a href="#">
+              <img src="https://share1.cloudhq-mkt3.net/f354dc82661562.png" alt="" width="54" height="50">
+            </a></li>
+            <li> <a href="#">
+              <img src="https://share1.cloudhq-mkt3.net/dcb120c9b2383a.png" alt="" width="50" height="50">
+            </a></li>
+            <li><a href="#">
+              <img src="https://share1.cloudhq-mkt3.net/3e8de5c2792982.png" alt="" width="50" height="50">
+            </a></li>
+
+
+           </ul>
+          <div class="footer-text">
+            <p >Ciudad de Panamá, Panamá 🇵🇦</p>
+            <a href="#">Políticas de privacidad | Ayuda</a>
+          </div>
+          </div>
+          <div class="disclaimer2">Estás recibiendo estos correos porque eres parte de la comunidad Zinli. Si quieres darte de baja haz clic <a class="baja" href="#">aquí</a>, pero ¡no será lo mismo sin ti! Te extrañaremos.</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
